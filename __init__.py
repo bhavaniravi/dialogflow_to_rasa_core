@@ -28,7 +28,7 @@ def construct_templates(intents):
                 action = intent.action + "_without_" + entity.name
                 action_list.append(action)
                 template_list.append({"action": action, "text": entity.prompts})
-    return action, template_list
+    return intent.action, template_list
 
 
 def write_domain_file(intents, actions, templates):
@@ -62,7 +62,6 @@ def construct_stories_md_string(intent):
     try:
         action = intent.action
         entity_dict = {}
-
         # handling slots
         slot_list = [{context.name:context.name} for context in intent.context_out]
         slot_str = "".join(["slot"+str(slot)+"\n" for slot in slot_list])
@@ -106,7 +105,7 @@ def construct_df_intents_to_objects(df_directory):
     intent_directory = df_directory + "/intents/"
     intents = []
     for file in os.listdir(intent_directory):
-        if file.endswith("_usersays_en.json"):
+        if file.endswith("_usersays_en.json") or file.endswith("_usersays_es.json") :
             continue
         with open(intent_directory + file, "r") as f:
             intent_file = json.load(f)
@@ -129,4 +128,5 @@ def construct_rasa_core(df_directory):
     construct_stories(intents)
 
 
-construct_rasa_core("/home/bhavani/apps/mlandds/rasa_nlu/data/examples/WordBot")
+# construct_rasa_core("/home/bhavani/apps/mlandds/rasa_nlu/data/examples/WordBot")
+construct_rasa_core("dialogflow")

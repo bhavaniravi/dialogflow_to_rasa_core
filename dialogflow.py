@@ -4,7 +4,7 @@ class Intent:
         intent_json = intent_json["responses"][0]
         self.entities = [Entity(params) for params in intent_json["parameters"]]
         self.context_out = [OutContext(context) for context in intent_json["affectedContexts"]]
-        self.action = intent_json["action"]
+        self.action = intent_json.get("action", self.name)
         self.responses = Responses(intent_json["messages"])
         # self.user_says = UserSays(self.name)
 
@@ -15,8 +15,8 @@ class Intent:
 class Entity:
     def __init__(self, entity_json):
         self.name = entity_json["name"]
-        self.required = entity_json["required"]
-        self.prompts =[prompt["value"] for prompt in entity_json["prompts"]]
+        self.required = entity_json.get("required",False)
+        self.prompts =[prompt["value"] for prompt in entity_json.get("prompts",[])]
         self.value = entity_json["value"]
 
 

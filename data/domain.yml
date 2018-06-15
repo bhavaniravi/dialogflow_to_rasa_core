@@ -1,0 +1,50 @@
+actions: get_antonym_without_word
+intents:
+- get_antonym_context
+- get_meaning
+- get_antonym
+- Default Fallback Intent
+- get_meaning_context
+- Default Welcome Intent
+templates:
+- action: get_antonym
+  text:
+  - 'the opposite of #word.word is get_antonym'
+- action: get_meaning
+  text:
+  - - The meaning of $word is get_meaning
+    - $word means get_meaning
+- action: get_meaning_without_word
+  text:
+  - Tell me the word again
+  - Let me the know the word again
+- action: get_antonym
+  text:
+  - - Antonym of $word is get_antonym
+    - opposite of $word is get_antonym
+- action: get_antonym_without_word
+  text:
+  - What's the word again
+  - tell me the word
+  - Im sorry I didnt get the word right
+- action: input.unknown
+  text:
+  - - I'm sorry. I'm having trouble understanding the question.
+    - I think I may have misunderstood your last statement.
+    - I'm sorry. I didn't quite grasp what you just said.
+    - I don't think I'm qualified to answer that yet.
+    - I'm a bit confused by that last part.
+    - I'm not totally sure about that.
+    - I'm not sure I follow.
+    - I'm afraid I don't understand.
+    - I'm a bit confused.
+- action: get_meaning
+  text:
+  - 'The meaning of #word.word is get_meaning'
+- action: input.welcome
+  text:
+  - - Hi! I am word bot I can do find meanings and opposite of words for you
+    - Hello!  I am word bot  I can do find meanings and opposite of words for you
+    - Good day!  I am word bot  I can do find meanings and opposite of words for you
+    - Greetings!  I am word bot,  I can do find meanings and opposite of words for
+      you

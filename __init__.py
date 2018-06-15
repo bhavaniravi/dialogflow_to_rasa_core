@@ -6,23 +6,23 @@ import copy
 
 from dialogflow import Intent
 
-MODEL_DIRECTORY = './projects/default/'
-SAMPLE_CONFIG = "sample_configs/config_spacy.yml"
-
+DOMAIN_FILE = "data/domain.yml"
+STORIES_FILE = "data/stories.md"
+NLU_TRAINING_FILE = "data/nlu_data.md"
 
 def construct_templates(intents):
     """
     Constructs templates from Dialogflow training data
     :param intents:
-    :return: Core-intents file
+    :return: actions, templates
     """
     template_list = []
     action_list = []
     for intent in intents:
         texts = intent.responses.messages
-        template_list.append({"action":intent.action, "text":texts })
+        template_list.append({"action": intent.action, "text": texts})
         action_list.append(intent.action)
-        ## Slot filling prompts
+        # Slot filling prompts
         for entity in intent.entities:
             if entity.required:
                 action = intent.action + "_without_" + entity.name
@@ -32,16 +32,15 @@ def construct_templates(intents):
 
 
 def write_domain_file(intents, actions, templates):
-    with open('domain.yml', 'w') as outfile:
+    with open(DOMAIN_FILE, 'w') as outfile:
         yaml.dump({"intents":intents, "actions":actions, "templates": templates}, outfile, default_flow_style=False)
 
 
-def construct_domain(intents, training_data):
+def construct_domain(intents):
     """
-    Construct core domain
-    :param intents,
-    :param training_data:
-    :return:
+    Construct core domain from intents actions and templates
+    Writes a domain.yml file
+    :param intents
     """
     intent_list = [intent.name for intent in intents]
     actions, templates = construct_templates(intents)
@@ -50,11 +49,11 @@ def construct_domain(intents, training_data):
 
 def construct_interpreter(training_data):
     """
-    Constructs Core actions from NLU training data
+    converts and writes training data to markdown
     :param training_data:
     :return: Core-intents file
     """
-    with open('nlu_data.md', 'w') as outfile:
+    with open(NLU_TRAINING_FILE, 'w') as outfile:
         outfile.write(training_data.as_markdown())
 
 
@@ -73,15 +72,16 @@ def construct_stories_md_string(intent):
         for entity in intent.entities:
             entity_dict[entity.name] = entity.value
             if entity.required:
-                final_string += f"\n## {intent.name}_without_{entity.name}\n    * {intent}\n        - {action}_without_{entity.name}\n    {slot_str} "
+                final_string += f"\n## {intent.name}_without_{entity.name}\n    * {intent.name}\n        - {action}_without_{entity.name}\n    {slot_str} "
 
         entity_dict = str(entity_dict) if entity_dict else ""
 
-        return final_string + f"\n## {intent.name}\n    * {intent}{entity_dict} \n         - {action}\n    {slot_str}"
-    except (TypeError) as e:
+        return final_string + f"\n## {intent.name}\n    * {intent.name}{entity_dict} \n         - {action}\n    {slot_str}"
+    except TypeError as e:
         print (e)
         # Ignore non-intent files"
         return ""
+
 
 def construct_stories(intents):
     """
@@ -93,11 +93,16 @@ def construct_stories(intents):
     md_string = u""
     for intent in intents:
         md_string += construct_stories_md_string(intent)
-    with open('stories.md', 'w') as outfile:
+    with open(STORIES_FILE, 'w') as outfile:
         outfile.write(md_string)
 
 
 def construct_df_intents_to_objects(df_directory):
+    """
+    Converts all the intents files to list of intent objects
+    :param df_directory:
+    :return:
+    """
     intent_directory = df_directory + "/intents/"
     intents = []
     for file in os.listdir(intent_directory):
@@ -107,23 +112,20 @@ def construct_df_intents_to_objects(df_directory):
             intent_file = json.load(f)
             intent = Intent(intent_file)
             intents.append(intent)
-    print (intents)
     return intents
 
 
 def construct_rasa_core(df_directory):
 
-    #step --1
+    # step --1
     training_data = load_data(df_directory)
-    dict_training_data = json.loads(training_data.as_json())
     construct_interpreter(training_data)
 
     # Step -2
     intents = construct_df_intents_to_objects(df_directory)
-    construct_domain(intents, dict_training_data)
+    construct_domain(intents)
 
-
-    # #step - 3
+    # step - 3
     construct_stories(intents)
 
 

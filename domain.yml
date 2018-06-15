@@ -1,15 +1,15 @@
 actions:
-- get_antonym
-- get_meaning
 - get_meaning_context
-- get_antonym_context
+- get_antonym
 - Default Welcome Intent
+- get_meaning
+- get_antonym_context
 intents:
-- get_antonym
-- get_meaning
 - get_meaning_context
-- get_antonym_context
+- get_antonym
 - Default Welcome Intent
+- get_meaning
+- get_antonym_context
 templates:
 - action: get_antonym
   text:

@@ -77,22 +77,23 @@ def construct_stories(df_directory):
     :param training_data:
     :return: Core-intents file
     """
+
+    md_string = u""
     intent_directory = df_directory + "/intents/"
-    final_list = []
     for file in os.listdir(intent_directory):
         with open(intent_directory + file, "r") as f:
             intent_file = json.load(f)
             try:
+                intent = story_title = intent_file["name"]
                 responses = intent_file["responses"][0]
-                texts = responses["messages"][0]["speech"]
-                if type(texts) != type([]):
-                    texts = [texts]
-                final_list.append({"action": responses["action"],
-                                   "text": texts})
+                action = responses["action"]
             except TypeError:
                 # Ignore non-intent files"
                 continue
-    return final_list
+        md_string += f"\n## {story_title}\n     * {intent} \n       - {action} "
+
+    with open('stories.md', 'w') as outfile:
+        outfile.write(md_string)
 
 
 

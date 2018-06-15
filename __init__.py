@@ -37,12 +37,12 @@ def construct_templates(df_directory):
                     texts = [texts]
                 final_list.append({"action":action, "text":texts })
 
-                # ## Slot filling prompts
-                # for entity in responses["parameters"]:
-                #     if entity["required"]:
-                #         action = action + "_without_" + entity["name"]
-                #         texts = [prompt["value"] for prompt in entity["prompts"]]
-                #         final_list.append({"action": action, "text": texts})
+                ## Slot filling prompts
+                for entity in responses["parameters"]:
+                    if entity["required"]:
+                        action = action + "_without_" + entity["name"]
+                        texts = [prompt["value"] for prompt in entity["prompts"]]
+                        final_list.append({"action": action, "text": texts})
             except TypeError as e:
                 print (e)
                 # Ignore non-intent files"

@@ -1,15 +1,15 @@
 actions:
-- get_meaning_context
 - get_antonym
+- get_meaning_context
 - Default Welcome Intent
-- get_meaning
 - get_antonym_context
+- get_meaning
 intents:
-- get_meaning_context
 - get_antonym
+- get_meaning_context
 - Default Welcome Intent
-- get_meaning
 - get_antonym_context
+- get_meaning
 templates:
 - action: get_antonym
   text:
@@ -18,10 +18,19 @@ templates:
   text:
   - The meaning of $word is get_meaning
   - $word means get_meaning
+- action: get_meaning_without_word
+  text:
+  - Tell me the word again
+  - Let me the know the word again
 - action: get_antonym
   text:
   - Antonym of $word is get_antonym
   - opposite of $word is get_antonym
+- action: get_antonym_without_word
+  text:
+  - What's the word again
+  - tell me the word
+  - Im sorry I didnt get the word right
 - action: input.unknown
   text:
   - I'm sorry. I'm having trouble understanding the question.

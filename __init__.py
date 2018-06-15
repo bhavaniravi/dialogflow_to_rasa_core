@@ -1,5 +1,4 @@
 from rasa_nlu.training_data import load_data
-from rasa_nlu.training_data.formats.dialogflow import DialogflowReader
 import json
 import os
 import yaml
@@ -7,7 +6,6 @@ import copy
 
 MODEL_DIRECTORY = './projects/default/'
 SAMPLE_CONFIG = "sample_configs/config_spacy.yml"
-DATA_PATH = 'data/examples/rasa/demo-rasa.json'
 
 
 def construct_intents(training_data):
@@ -34,11 +32,19 @@ def construct_templates(df_directory):
             try:
                 responses = intent_file["responses"][0]
                 texts = responses["messages"][0]["speech"]
+                action = responses["action"]
                 if type(texts) != type([]):
                     texts = [texts]
-                final_list.append({"action":responses["action"],
-                            "text":texts })
-            except TypeError:
+                final_list.append({"action":action, "text":texts })
+
+                # ## Slot filling prompts
+                # for entity in responses["parameters"]:
+                #     if entity["required"]:
+                #         action = action + "_without_" + entity["name"]
+                #         texts = [prompt["value"] for prompt in entity["prompts"]]
+                #         final_list.append({"action": action, "text": texts})
+            except TypeError as e:
+                print (e)
                 # Ignore non-intent files"
                 continue
     return final_list
@@ -46,7 +52,7 @@ def construct_templates(df_directory):
 
 def write_domain_file(intents, actions, templates):
     with open('domain.yml', 'w') as outfile:
-        yaml.dump({"intents":intents, "actions":actions, "templates":templates}, outfile, default_flow_style=False)
+        yaml.dump({"intents":intents, "actions":actions, "templates": templates}, outfile, default_flow_style=False)
 
 
 def construct_domain(df_directory, training_data):
@@ -71,6 +77,38 @@ def construct_interpreter(training_data):
         outfile.write(training_data.as_markdown())
 
 
+def construct_stories_md_string(intents):
+    final_string = u""
+    try:
+        if type(intents) == type([]):
+            return ""
+        intent = intents["name"]
+        story_title = intent
+        responses = intents["responses"][0]
+        action = responses["action"]
+        entity_dict = {}
+
+        ## handling slots
+        slot_list = [{context["name"]:context["name"]} for context in responses["affectedContexts"]]
+        slot_str = "".join(["slot"+str(slot)+"\n" for slot in slot_list])
+        slot_str = "-"+slot_str if slot_str else ""
+        ## entity required case
+        for entity in responses["parameters"]:
+            entity_dict[entity["name"]] = entity["value"]
+            if entity["required"]:
+                entity_name = entity["name"]
+                final_string += f"\n## {story_title}_without_{entity_name}\n    * {intent}\n        - {action}_without_{entity_name}\n    {slot_str} "
+
+        entity_dict = str(entity_dict) if entity_dict else ""
+
+        return final_string + f"\n## {story_title}\n    * {intent}{entity_dict} \n         - {action}\n    {slot_str}"
+    except (TypeError) as e:
+        print (e)
+        # Ignore non-intent files"
+        return ""
+
+
+
 def construct_stories(df_directory):
     """
     Constructs Core actions from NLU training data
@@ -83,14 +121,7 @@ def construct_stories(df_directory):
     for file in os.listdir(intent_directory):
         with open(intent_directory + file, "r") as f:
             intent_file = json.load(f)
-            try:
-                intent = story_title = intent_file["name"]
-                responses = intent_file["responses"][0]
-                action = responses["action"]
-            except TypeError:
-                # Ignore non-intent files"
-                continue
-        md_string += f"\n## {story_title}\n     * {intent} \n       - {action} "
+            md_string += construct_stories_md_string(intent_file)
 
     with open('stories.md', 'w') as outfile:
         outfile.write(md_string)
@@ -99,14 +130,14 @@ def construct_stories(df_directory):
 
 def construct_rasa_core(df_directory):
 
-    # step --1
+    #step --1
     training_data = load_data(df_directory)
     dict_training_data = json.loads(training_data.as_json())
     construct_domain(df_directory, dict_training_data)
 
-    # # Step -2
+    # Step -2
     construct_interpreter(training_data)
-    #
+
     # #step - 3
     construct_stories(df_directory)
 

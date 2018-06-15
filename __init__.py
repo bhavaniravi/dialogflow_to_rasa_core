@@ -12,7 +12,7 @@ def construct_intents(training_data):
     """
     Constructs Core intents from NLU training data
     :param training_data:
-    :return: Core-intents file
+    :return: list of intent names
     """
     examples = training_data["rasa_nlu_data"]["common_examples"]
     return list(set([eg["intent"] for eg in examples]))
@@ -20,7 +20,7 @@ def construct_intents(training_data):
 
 def construct_templates(df_directory):
     """
-    Constructs templates from NLU training data
+    Constructs templates from Dialogflow training data
     :param training_data:
     :return: Core-intents file
     """
@@ -106,8 +106,6 @@ def construct_stories_md_string(intents):
         print (e)
         # Ignore non-intent files"
         return ""
-
-
 
 def construct_stories(df_directory):
     """

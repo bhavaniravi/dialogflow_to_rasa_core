@@ -16,19 +16,23 @@ def construct_templates(intents):
     :param intents:
     :return: actions, templates
     """
-    template_list = []
+    template_list = {}
     action_list = []
     for intent in intents:
         texts = intent.responses.messages
-        template_list.append({"action": intent.action, "text": texts})
+        if isinstance(texts[0],list):
+            from itertools import chain
+            texts = list(chain.from_iterable(texts))
+        template_list.update({intent.action: [{"text": text} for text in texts]})
         action_list.append(intent.action)
         # Slot filling prompts
         for entity in intent.entities:
             if entity.required:
                 action = intent.action + "_without_" + entity.name
                 action_list.append(action)
-                template_list.append({"action": action, "text": entity.prompts})
-    return intent.action, template_list
+                template_list.update({action: [{"text":text} for text in entity.prompts]})
+
+    return action_list, template_list
 
 
 def write_domain_file(intents, actions, templates):

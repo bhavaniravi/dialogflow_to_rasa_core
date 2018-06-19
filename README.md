@@ -5,3 +5,11 @@ Rasa NLU have extensive support to emulate and convert dialogflow training files
 This script will enable you to create `stories.md`, `domain.yml` and `training_data.md` files for your `rasa_core
 
 > The package is still in development please avoid using it for production purpose
+
+Usage:
+
+`python construct -d dialogflow`
+
+Or simply,
+
+`python construct`

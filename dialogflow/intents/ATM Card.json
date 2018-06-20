@@ -1,0 +1,36 @@
+{
+  "id": "fa96a627-05c7-49a6-98a4-d3fc5c78125b",
+  "name": "ATM Card",
+  "auto": true,
+  "contexts": [
+    "Debit"
+  ],
+  "responses": [
+    {
+      "resetContexts": true,
+      "affectedContexts": [
+        {
+          "name": "Debit",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "https://www.primebank.com.bd/index.php/home/ATM_Card"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1528179834,
+  "fallbackIntent": false,
+  "events": []
+}

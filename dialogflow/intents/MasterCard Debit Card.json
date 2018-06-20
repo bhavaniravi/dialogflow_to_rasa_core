@@ -1,0 +1,41 @@
+{
+  "id": "0e997187-3cb7-4162-b235-c6cedfbb3343",
+  "name": "MasterCard Debit Card",
+  "auto": true,
+  "contexts": [
+    "Debit"
+  ],
+  "responses": [
+    {
+      "resetContexts": true,
+      "affectedContexts": [
+        {
+          "name": "D",
+          "parameters": {},
+          "lifespan": 5
+        },
+        {
+          "name": "Debit",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "https://www.primebank.com.bd/index.php/home/Master_Debit_Card"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1528179585,
+  "fallbackIntent": false,
+  "events": []
+}

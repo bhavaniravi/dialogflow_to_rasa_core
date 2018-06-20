@@ -1,0 +1,54 @@
+{
+  "id": "39f71a2b-70d0-41c8-9667-82b7eb9de303",
+  "name": "accountBalance.check",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "account.balance.check",
+      "affectedContexts": [
+        {
+          "name": "balance",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "4682174f-0a11-4c97-88a2-6de190eeedfe",
+          "required": true,
+          "dataType": "@account",
+          "name": "account",
+          "value": "$account",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Balance for which account?@account"
+            },
+            {
+              "lang": "en",
+              "value": "What account do you want the balance for?@account"
+            }
+          ],
+          "isList": true
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "Please enter your account password to check balance"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1528102917,
+  "fallbackIntent": false,
+  "events": []
+}

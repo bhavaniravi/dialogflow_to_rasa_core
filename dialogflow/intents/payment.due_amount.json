@@ -1,0 +1,35 @@
+{
+  "id": "d9e4cef5-e835-4e27-980e-1b880fb69cd2",
+  "name": "payment.due_amount",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "payment.due_amount",
+      "affectedContexts": [
+        {
+          "name": "due_amount",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "Please enter your account password to know your due amount"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1526587586,
+  "fallbackIntent": false,
+  "events": []
+}

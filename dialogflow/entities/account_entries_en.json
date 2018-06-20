@@ -1,0 +1,41 @@
+[
+  {
+    "value": "checking account",
+    "synonyms": [
+      "checking",
+      "checking account"
+    ]
+  },
+  {
+    "value": "savings account",
+    "synonyms": [
+      "savings",
+      "savings account"
+    ]
+  },
+  {
+    "value": "salary account",
+    "synonyms": [
+      "salary account",
+      "salary"
+    ]
+  },
+  {
+    "value": "loan account",
+    "synonyms": [
+      "loan account"
+    ]
+  },
+  {
+    "value": "credit card",
+    "synonyms": [
+      "credit card"
+    ]
+  },
+  {
+    "value": "deposit",
+    "synonyms": [
+      "deposit"
+    ]
+  }
+]

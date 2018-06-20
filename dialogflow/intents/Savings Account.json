@@ -1,0 +1,30 @@
+{
+  "id": "18d56997-6bf1-4742-b46a-da9aea54535b",
+  "name": "Savings Account",
+  "auto": true,
+  "contexts": [
+    "Deposit"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "https://www.primebank.com.bd/index.php/home/Savings_Account"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1528102497,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": "9ca7ab2b-ea4c-4e85-bb38-94e0b2a19268",
+  "name": "Debit Cards",
+  "auto": true,
+  "contexts": [
+    "Retailbanking"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "Debit",
+          "parameters": {},
+          "lifespan": 1
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "Please choose from the following:"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1528179759,
+  "fallbackIntent": false,
+  "events": []
+}

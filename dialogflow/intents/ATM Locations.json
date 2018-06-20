@@ -1,0 +1,36 @@
+{
+  "id": "ac19b34d-a6e3-452f-bc29-b3100b5b24c3",
+  "name": "ATM Locations",
+  "auto": true,
+  "contexts": [
+    "Debit"
+  ],
+  "responses": [
+    {
+      "resetContexts": true,
+      "affectedContexts": [
+        {
+          "name": "Debit",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "https://www.primebank.com.bd/index.php/home/atm_locations"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1528179887,
+  "fallbackIntent": false,
+  "events": []
+}

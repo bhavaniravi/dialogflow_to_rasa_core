@@ -1,0 +1,44 @@
+{
+  "id": "4e717976-858b-4e3e-b6e5-1b5e81cba92e",
+  "name": "account.action",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": true,
+      "action": "account.open",
+      "affectedContexts": [
+        {
+          "name": "aaaaa",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "3f84d6b0-2e6e-4503-b610-1d4563290d12",
+          "required": false,
+          "dataType": "@account-action",
+          "name": "account-action",
+          "value": "$account-action",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "To $account-action your account you should come to one of our banks in person. Don\u0027t forget to bring your ID."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1528103883,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "value": "Payment due date",
+    "synonyms": [
+      "Payment due date"
+    ]
+  },
+  {
+    "value": "Payment due amount",
+    "synonyms": [
+      "Payment due"
+    ]
+  },
+  {
+    "value": "Balance",
+    "synonyms": [
+      "Balance"
+    ]
+  },
+  {
+    "value": "Transfer",
+    "synonyms": [
+      "Transfer"
+    ]
+  }
+]

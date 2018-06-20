@@ -1,0 +1,26 @@
+[
+  {
+    "value": "Debit Cards",
+    "synonyms": [
+      "Debit Cards"
+    ]
+  },
+  {
+    "value": "Deposits",
+    "synonyms": [
+      "Deposit"
+    ]
+  },
+  {
+    "value": "Loans",
+    "synonyms": [
+      "Loans"
+    ]
+  },
+  {
+    "value": "Credit Cards",
+    "synonyms": [
+      "Credit Cards"
+    ]
+  }
+]

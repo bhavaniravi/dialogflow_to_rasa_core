@@ -1,0 +1,26 @@
+[
+  {
+    "id": "6cf4cc35-5a6f-4778-9d2e-23c90e463028",
+    "data": [
+      {
+        "text": "DebitCards",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1528179759
+  },
+  {
+    "id": "dbd32756-2e29-47a8-bd85-085a7675b642",
+    "data": [
+      {
+        "text": "Debit Cards",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1528179723
+  }
+]

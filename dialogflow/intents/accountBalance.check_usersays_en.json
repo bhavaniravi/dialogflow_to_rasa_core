@@ -1,0 +1,597 @@
+[
+  {
+    "id": "f0db0ad4-1e76-4de2-aded-25618bb9eaf6",
+    "data": [
+      {
+        "text": "print my account balance",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527070268
+  },
+  {
+    "id": "a192b664-073e-4361-b297-813420fbb155",
+    "data": [
+      {
+        "text": "savings account",
+        "alias": "account",
+        "meta": "@account",
+        "userDefined": false
+      },
+      {
+        "text": " balance",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527070268
+  },
+  {
+    "id": "28432568-38f8-419e-a7d5-3cd717630f44",
+    "data": [
+      {
+        "text": "tell me how much money is there",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527070268
+  },
+  {
+    "id": "84869c07-2196-42e5-ad9a-aac170718f2c",
+    "data": [
+      {
+        "text": "can you show balance on the card",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527070268
+  },
+  {
+    "id": "8868755d-cedf-41db-a9ff-fd9ea9e1dc01",
+    "data": [
+      {
+        "text": "can you tell me my account balance",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527070268
+  },
+  {
+    "id": "5a2ed0f3-b833-4fea-a41d-b3f5317cddf8",
+    "data": [
+      {
+        "text": "how much money do I have on the card",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527070268
+  },
+  {
+    "id": "332d839b-7493-484f-ada5-346f40d1ac40",
+    "data": [
+      {
+        "text": "check",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " my balance",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1527070268
+  },
+  {
+    "id": "483ca9d9-61e1-447c-8a18-f744032b2069",
+    "data": [
+      {
+        "text": "fetch my ",
+        "userDefined": false
+      },
+      {
+        "text": "savings account",
+        "alias": "account",
+        "meta": "@account",
+        "userDefined": false
+      },
+      {
+        "text": " balance",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527070268
+  },
+  {
+    "id": "c491f4c7-935d-4780-b821-d3b229c1d75c",
+    "data": [
+      {
+        "text": "show me the amount I have in my account",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527070268
+  },
+  {
+    "id": "e23a52b8-490d-46a1-960b-d492c8b7b173",
+    "data": [
+      {
+        "text": "check",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " my bank balance",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527070268
+  },
+  {
+    "id": "a2afb8f6-604a-48bc-9bd7-56082d407274",
+    "data": [
+      {
+        "text": "bank balance",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527070268
+  },
+  {
+    "id": "b9cf0dba-45f6-4bc7-b6ce-f1a7284f96be",
+    "data": [
+      {
+        "text": "saving account",
+        "alias": "account",
+        "meta": "@account",
+        "userDefined": false
+      },
+      {
+        "text": " balance",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527070268
+  },
+  {
+    "id": "e15c905d-690d-4469-bfba-47c796ff5622",
+    "data": [
+      {
+        "text": "account balance",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1527070268
+  },
+  {
+    "id": "dd0f5591-bd6f-4693-af3b-74abf6c77b0c",
+    "data": [
+      {
+        "text": "money in my account",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527070268
+  },
+  {
+    "id": "f3ad2a3c-15a0-4efe-b101-13b1ad155fb0",
+    "data": [
+      {
+        "text": "checking account",
+        "alias": "account",
+        "meta": "@account",
+        "userDefined": false
+      },
+      {
+        "text": " balance",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527070268
+  },
+  {
+    "id": "b6eff9b4-a855-49da-9a89-ef86e56b9779",
+    "data": [
+      {
+        "text": "may I know my account balance",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527070268
+  },
+  {
+    "id": "2f9e989c-947b-418c-978f-e0e762601fea",
+    "data": [
+      {
+        "text": "check",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " how much money do i have",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527070268
+  },
+  {
+    "id": "c02a24cd-330a-42fc-a34b-a39050522604",
+    "data": [
+      {
+        "text": "show my account balance",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527070268
+  },
+  {
+    "id": "e350c4a0-12d8-4f05-8b8b-b160985f6378",
+    "data": [
+      {
+        "text": "I want to ",
+        "userDefined": false
+      },
+      {
+        "text": "check",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " my balance",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1527070268
+  },
+  {
+    "id": "c60ed7e3-4f02-4e20-aa3d-5ad72425ccbc",
+    "data": [
+      {
+        "text": "what is the balance in ",
+        "userDefined": false
+      },
+      {
+        "text": "salary account",
+        "alias": "account",
+        "meta": "@account",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527070268
+  },
+  {
+    "id": "2d4ff26c-6b1a-46c6-aa12-fdfdd00715b5",
+    "data": [
+      {
+        "text": "and for ",
+        "userDefined": false
+      },
+      {
+        "text": "savings",
+        "alias": "account",
+        "meta": "@account",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527070268
+  },
+  {
+    "id": "8c401f09-ef73-4950-aa16-e36281eda4a0",
+    "data": [
+      {
+        "text": "tell me my account balance",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527070268
+  },
+  {
+    "id": "c7f8f76f-70bb-452e-956c-2f8b927a3604",
+    "data": [
+      {
+        "text": "how much money do I have in my account",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527070268
+  },
+  {
+    "id": "69d15b96-ffd1-47c1-a71d-4c3f44174b2d",
+    "data": [
+      {
+        "text": "tell me my bank balance",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527070268
+  },
+  {
+    "id": "4deb6977-0b71-4fb2-b2fc-7cf76af99eba",
+    "data": [
+      {
+        "text": "how much money is available in my bank account",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527070268
+  },
+  {
+    "id": "9524539d-e195-4157-968a-80873297d74a",
+    "data": [
+      {
+        "text": "balance",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527070268
+  },
+  {
+    "id": "b6139e0a-dfd5-46e4-8fe2-cbb29533cf39",
+    "data": [
+      {
+        "text": "check",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " my account",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527070268
+  },
+  {
+    "id": "e582d60a-27f8-470e-a252-68fa450c73ee",
+    "data": [
+      {
+        "text": "may I know my ",
+        "userDefined": false
+      },
+      {
+        "text": "savings account",
+        "alias": "account",
+        "meta": "@account",
+        "userDefined": false
+      },
+      {
+        "text": " balance",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527070268
+  },
+  {
+    "id": "455072b1-86f5-4ae3-8e3a-0e8ed9ae1949",
+    "data": [
+      {
+        "text": "show balance",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527070268
+  },
+  {
+    "id": "0be3bce4-8c92-461a-ae2a-6b0c5f081516",
+    "data": [
+      {
+        "text": "how much money I have in my ",
+        "userDefined": false
+      },
+      {
+        "text": "savings account",
+        "alias": "account",
+        "meta": "@account",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1527070268
+  },
+  {
+    "id": "a957bebc-482f-4d75-a497-84e90519eb9b",
+    "data": [
+      {
+        "text": "what is my ",
+        "userDefined": false
+      },
+      {
+        "text": "savings account",
+        "alias": "account",
+        "meta": "@account",
+        "userDefined": false
+      },
+      {
+        "text": " balance",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1527070268
+  },
+  {
+    "id": "38fedc83-3b38-48ca-ae13-11923fdd3405",
+    "data": [
+      {
+        "text": "can you ",
+        "userDefined": false
+      },
+      {
+        "text": "check",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " my ",
+        "userDefined": false
+      },
+      {
+        "text": "savings",
+        "alias": "account",
+        "meta": "@account",
+        "userDefined": false
+      },
+      {
+        "text": " as well",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527070268
+  },
+  {
+    "id": "18260980-6184-43ad-8057-e217c72304c0",
+    "data": [
+      {
+        "text": "show my ",
+        "userDefined": false
+      },
+      {
+        "text": "checking account",
+        "alias": "account",
+        "meta": "@account",
+        "userDefined": false
+      },
+      {
+        "text": " balance",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527070268
+  },
+  {
+    "id": "068a0deb-a599-40ca-8d89-ca2fd955abe7",
+    "data": [
+      {
+        "text": "I want to know my ",
+        "userDefined": false
+      },
+      {
+        "text": "savings account",
+        "alias": "account",
+        "meta": "@account",
+        "userDefined": false
+      },
+      {
+        "text": " balance",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527070268
+  },
+  {
+    "id": "e7f338b5-e887-45d9-95f8-422aeb27c095",
+    "data": [
+      {
+        "text": "can you tell me my ",
+        "userDefined": false
+      },
+      {
+        "text": "checking account",
+        "alias": "account",
+        "meta": "@account",
+        "userDefined": false
+      },
+      {
+        "text": " balance",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527070268
+  },
+  {
+    "id": "b46f599b-3924-4239-be19-fb550eeee331",
+    "data": [
+      {
+        "text": "can you ",
+        "userDefined": false
+      },
+      {
+        "text": "check",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " my ",
+        "userDefined": false
+      },
+      {
+        "text": "savings account",
+        "alias": "account",
+        "meta": "@account",
+        "userDefined": false
+      },
+      {
+        "text": " balance",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1527070268
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "id": "04455061-130c-4f93-810c-8dc0e3417cec",
+  "name": "Deposits",
+  "auto": true,
+  "contexts": [
+    "Retailbanking"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "Deposit",
+          "parameters": {},
+          "lifespan": 1
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "Here are the services in deposits: @Deposits"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1528103388,
+  "fallbackIntent": false,
+  "events": []
+}

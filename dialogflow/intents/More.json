@@ -1,0 +1,28 @@
+{
+  "id": "76ce294d-0527-4d5d-bf60-62b70d1e7845",
+  "name": "More",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "Here are the services we offer... @More"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1528092243,
+  "fallbackIntent": false,
+  "events": []
+}

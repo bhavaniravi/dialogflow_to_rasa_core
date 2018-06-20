@@ -4,6 +4,7 @@ import argparse
 import os
 import yaml
 import copy
+import fnmatch
 
 from dialogflow import Intent
 
@@ -62,7 +63,7 @@ class dialogflow_convert(object):
         intent_directory = self.df_directory + "/intents/"
         intents = []
         for file in os.listdir(intent_directory):
-            if file.endswith("_usersays_en.json") or file.endswith("_usersays_es.json") :
+            if fnmatch.fnmatchcase(file, "*_usersays_*.json"):
                 continue
             with open(intent_directory + file, "r") as f:
                 intent_file = json.load(f)

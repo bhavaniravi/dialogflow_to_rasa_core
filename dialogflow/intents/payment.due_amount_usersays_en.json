@@ -1,0 +1,137 @@
+[
+  {
+    "id": "d5518667-cdff-42e3-b0d5-04b366eeaae5",
+    "data": [
+      {
+        "text": "money due",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1526587431
+  },
+  {
+    "id": "9060feb5-b0e3-4d53-a03f-088423ee1b91",
+    "data": [
+      {
+        "text": "amount due",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1526587431
+  },
+  {
+    "id": "a1aba9b8-85e6-4401-98fa-1897c84c3903",
+    "data": [
+      {
+        "text": "how much the bank owe me",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1526587431
+  },
+  {
+    "id": "f953a383-001f-432c-b156-c286052f5acb",
+    "data": [
+      {
+        "text": "how much money i need to pay",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1526587431
+  },
+  {
+    "id": "aa3c0d8a-3ae6-4459-9af8-dfac824f1489",
+    "data": [
+      {
+        "text": "total due on my card",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1526587431
+  },
+  {
+    "id": "1f664eac-882f-4da9-991d-5329cd0cb8bf",
+    "data": [
+      {
+        "text": "credit card",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " payment due",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1526587431
+  },
+  {
+    "id": "4aac3ee5-8241-4cf1-8fdb-1e8283dd0a97",
+    "data": [
+      {
+        "text": "payment due amount",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1526587431
+  },
+  {
+    "id": "f65f1800-3d8c-4cdb-a394-b38f89e53ffb",
+    "data": [
+      {
+        "text": "payment due",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1526587431
+  },
+  {
+    "id": "a5538640-cbe5-486e-9be0-6e76a4759215",
+    "data": [
+      {
+        "text": "check",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " due payment of ",
+        "userDefined": false
+      },
+      {
+        "text": "credit card",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1526587431
+  },
+  {
+    "id": "4a15ad96-ec30-4f59-bdbd-68472addc625",
+    "data": [
+      {
+        "text": "How much payment is due",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1526587431
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "eb53e535-865c-4edb-b3a5-de524dd28fe2",
+    "data": [
+      {
+        "text": "Retail Banking",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1528092465
+  },
+  {
+    "id": "7ee225d9-6928-49b2-924c-555e0b1bf4b8",
+    "data": [
+      {
+        "text": "Show me ",
+        "userDefined": false
+      },
+      {
+        "text": "retail banking",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1528092465
+  }
+]

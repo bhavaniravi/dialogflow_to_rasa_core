@@ -1,0 +1,122 @@
+[
+  {
+    "id": "873b48aa-fd25-4c29-95b4-aab204d505c6",
+    "data": [
+      {
+        "text": "create a new account",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1526985129
+  },
+  {
+    "id": "02e52c93-0164-4149-93dd-01390761b1f7",
+    "data": [
+      {
+        "text": "I do not have an bank account",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1526985129
+  },
+  {
+    "id": "053c8054-1d15-4874-bf40-fa5f31aeddaa",
+    "data": [
+      {
+        "text": "how do I open an account",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1526985129
+  },
+  {
+    "id": "5db76100-dbf5-4b63-bd1c-5d5a22d8b5fd",
+    "data": [
+      {
+        "text": "account opening",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1526985129
+  },
+  {
+    "id": "6001bbfe-2f83-40a1-b26a-661da7e2c6e5",
+    "data": [
+      {
+        "text": "open a new account",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1526985129
+  },
+  {
+    "id": "55620428-de58-435d-80f0-807b02ea8150",
+    "data": [
+      {
+        "text": "what are the steps for opening account",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1526985129
+  },
+  {
+    "id": "9d2bf6e0-02af-4bbb-aadf-66f0902d4475",
+    "data": [
+      {
+        "text": "open an account",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1526985129
+  },
+  {
+    "id": "fa16f4ea-9e4c-444a-a52f-c1da05ee98c3",
+    "data": [
+      {
+        "text": "new account",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1526985129
+  },
+  {
+    "id": "8455b385-02be-4f1e-87c2-1a3d2571b4fd",
+    "data": [
+      {
+        "text": "I want to open a new account",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1526985129
+  },
+  {
+    "id": "c5f60076-d545-445f-81be-ca8969922586",
+    "data": [
+      {
+        "text": "I want to open an account",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1526985129
+  }
+]

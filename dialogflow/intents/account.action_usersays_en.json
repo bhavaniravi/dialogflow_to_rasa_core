@@ -1,0 +1,264 @@
+[
+  {
+    "id": "319b36bf-9649-4b68-a54b-108d542f8a1c",
+    "data": [
+      {
+        "text": "remove",
+        "alias": "account-action",
+        "meta": "@account-action",
+        "userDefined": true
+      },
+      {
+        "text": " my account",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1528103883
+  },
+  {
+    "id": "726c3f95-4717-466d-ac85-16bec85394e3",
+    "data": [
+      {
+        "text": "stop",
+        "alias": "account-action",
+        "meta": "@account-action",
+        "userDefined": false
+      },
+      {
+        "text": " my account",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1528103883
+  },
+  {
+    "id": "4ed392e7-10fe-4cb8-9a2f-95d17ee37558",
+    "data": [
+      {
+        "text": "I want to ",
+        "userDefined": false
+      },
+      {
+        "text": "open",
+        "alias": "account-action",
+        "meta": "@account-action",
+        "userDefined": true
+      },
+      {
+        "text": " a new account",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1528103883
+  },
+  {
+    "id": "412fe11a-97e2-4c0b-8ffc-1ba6ddf3939e",
+    "data": [
+      {
+        "text": "close",
+        "alias": "account-action",
+        "meta": "@account-action",
+        "userDefined": false
+      },
+      {
+        "text": " account",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1528103883
+  },
+  {
+    "id": "c7314679-baff-4506-98de-9f1735f96d70",
+    "data": [
+      {
+        "text": "close",
+        "alias": "account-action",
+        "meta": "@account-action",
+        "userDefined": false
+      },
+      {
+        "text": " my account",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1528103883
+  },
+  {
+    "id": "17b6a859-1372-410a-9b98-c346466687f0",
+    "data": [
+      {
+        "text": "what are the steps for ",
+        "userDefined": false
+      },
+      {
+        "text": "opening",
+        "alias": "account-action",
+        "meta": "@account-action",
+        "userDefined": true
+      },
+      {
+        "text": " account",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1528103883
+  },
+  {
+    "id": "e27e510a-0475-461a-8f01-a3a94f0af187",
+    "data": [
+      {
+        "text": "create",
+        "alias": "account-action",
+        "meta": "@account-action",
+        "userDefined": true
+      },
+      {
+        "text": " a new account",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1528103883
+  },
+  {
+    "id": "44a52af3-0642-4787-8c13-80fb8f70c8c5",
+    "data": [
+      {
+        "text": "I do not have an bank account",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1528103883
+  },
+  {
+    "id": "0459fd5e-c40c-44d2-8cc1-5de991222cf8",
+    "data": [
+      {
+        "text": "how do I ",
+        "userDefined": false
+      },
+      {
+        "text": "open",
+        "alias": "account-action",
+        "meta": "@account-action",
+        "userDefined": true
+      },
+      {
+        "text": " an account",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1528103883
+  },
+  {
+    "id": "78e42f24-fecf-4695-aeca-d0b3e8566dfc",
+    "data": [
+      {
+        "text": "open",
+        "alias": "account-action",
+        "meta": "@account-action",
+        "userDefined": true
+      },
+      {
+        "text": " a new account",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1528103883
+  },
+  {
+    "id": "3d808db3-221f-463c-a9c1-d1c772d7b7c3",
+    "data": [
+      {
+        "text": "open",
+        "alias": "account-action",
+        "meta": "@account-action",
+        "userDefined": true
+      },
+      {
+        "text": " an account",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1528103883
+  },
+  {
+    "id": "55ce5f06-e312-4515-a017-e2fb0846c029",
+    "data": [
+      {
+        "text": "new",
+        "alias": "account-action",
+        "meta": "@account-action",
+        "userDefined": true
+      },
+      {
+        "text": " account",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1528103883
+  },
+  {
+    "id": "8066e0bb-fcf3-4eb7-9afa-f86c9783b3be",
+    "data": [
+      {
+        "text": "account ",
+        "userDefined": false
+      },
+      {
+        "text": "opening",
+        "alias": "account-action",
+        "meta": "@account-action",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1528103883
+  },
+  {
+    "id": "d3011c28-e3aa-4972-9292-6f85998ed2ca",
+    "data": [
+      {
+        "text": "I want to ",
+        "userDefined": false
+      },
+      {
+        "text": "open",
+        "alias": "account-action",
+        "meta": "@account-action",
+        "userDefined": true
+      },
+      {
+        "text": " an account",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1528103883
+  }
+]

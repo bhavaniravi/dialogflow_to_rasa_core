@@ -1,0 +1,62 @@
+[
+  {
+    "value": "close",
+    "synonyms": [
+      "close"
+    ]
+  },
+  {
+    "value": "new",
+    "synonyms": [
+      "new"
+    ]
+  },
+  {
+    "value": "create",
+    "synonyms": [
+      "create"
+    ]
+  },
+  {
+    "value": "opening",
+    "synonyms": [
+      "opening"
+    ]
+  },
+  {
+    "value": "remove",
+    "synonyms": [
+      "remove"
+    ]
+  },
+  {
+    "value": "open ",
+    "synonyms": [
+      "open "
+    ]
+  },
+  {
+    "value": "generate",
+    "synonyms": [
+      "generate"
+    ]
+  },
+  {
+    "value": "move",
+    "synonyms": [
+      "move"
+    ]
+  },
+  {
+    "value": "stop",
+    "synonyms": [
+      "stop"
+    ]
+  },
+  {
+    "value": "transfer",
+    "synonyms": [
+      "transfer"
+    ]
+  }
+]
